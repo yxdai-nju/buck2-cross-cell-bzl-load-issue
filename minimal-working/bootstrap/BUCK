@@ -1,0 +1,6 @@
+load("@bootstrap//:toolchain.bzl", "my_toolchain")
+
+my_toolchain(
+    name = "my_toolchain",
+    visibility = ["PUBLIC"],
+)

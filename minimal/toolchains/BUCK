@@ -1,0 +1,12 @@
+load("@prelude//toolchains:python.bzl", "system_python_bootstrap_toolchain")
+load("@bootstrap//:toolchain.bzl", "my_toolchain")
+
+system_python_bootstrap_toolchain(
+    name = "python_bootstrap",
+    visibility = ["PUBLIC"],
+)
+
+my_toolchain(
+    name = "my_toolchain",
+    visibility = ["PUBLIC"],
+)

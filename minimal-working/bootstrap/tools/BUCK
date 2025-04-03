@@ -1,0 +1,12 @@
+load("@bootstrap//tools:defs.bzl", "my_tools")
+
+my_tools(
+    name = "my_tools",
+    visibility = ["PUBLIC"],
+)
+
+python_bootstrap_binary(
+    name = "tool_1",
+    main = "tool_1.py",
+    visibility = ["PUBLIC"],
+)

@@ -1,0 +1,6 @@
+load(":depend_on_my_toolchain.bzl", "depend_on_my_toolchain")
+
+depend_on_my_toolchain(
+    name = "target",
+    visibility = ["PUBLIC"],
+)

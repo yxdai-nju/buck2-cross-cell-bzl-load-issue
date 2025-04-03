@@ -1,0 +1,6 @@
+load("@prelude//toolchains:python.bzl", "system_python_bootstrap_toolchain")
+
+system_python_bootstrap_toolchain(
+    name = "python_bootstrap",
+    visibility = ["PUBLIC"],
+)
